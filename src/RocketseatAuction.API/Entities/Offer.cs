@@ -2,7 +2,7 @@
 
 namespace RocketseatAuction.API.Entities
 {
-    [Table("Offer")]
+    [Table("Offers")]
     public class Offer
     {
         public int Id { get; set; }
