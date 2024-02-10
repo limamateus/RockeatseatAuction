@@ -12,10 +12,13 @@ namespace RocketseatAuction.API.Repositories
         public DbSet<User> Users { get; set; }
 
         public DbSet<Offer> Offers { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+
+
+        public RocketseatAuctionDbContext(DbContextOptions opt):base(opt)
         {
-            optionsBuilder.UseSqlite(@"Data Source=D:\Alura\API RESTFULL\RockeatseatAuction\SQLlite\leilaoDbNLW.db");
+
         }
+        
 
     }
 }
