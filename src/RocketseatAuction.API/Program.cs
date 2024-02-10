@@ -52,7 +52,7 @@ builder.Services.AddSwaggerGen(opt =>
 
 builder.Services.AddScoped<AuthenticationUserAttribute>();
 
-builder.Services.AddScoped<LoggedUser>();
+builder.Services.AddScoped<ILoggedUser,LoggedUser>();
 
 builder.Services.AddScoped<CreateOfferUseCase>();
 

@@ -11,8 +11,8 @@ namespace RocketseatAuction.API.UseCases.Offers.CreateOffer
     {
         private readonly IOfferRepository _repository;
 
-        private readonly LoggedUser _loggerUser;
-        public CreateOfferUseCase(IOfferRepository repository, LoggedUser loggerUser)
+        private readonly ILoggedUser _loggerUser;
+        public CreateOfferUseCase(IOfferRepository repository, ILoggedUser loggerUser)
         {
             _repository = repository;
             _loggerUser = loggerUser;
